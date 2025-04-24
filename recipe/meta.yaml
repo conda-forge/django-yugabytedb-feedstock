@@ -1,13 +1,13 @@
 {% set name = "django-yugabytedb" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-yugabytedb-{{ version }}.tar.gz
-  sha256: a8dce19dc763afcd0725e49892017d44c26b58745bcc0da20c2a80a0810fdcba
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2c03362c54b190ec935ee6d057ed39ba7db90c02b6e773698ba1d5248f8a4c94
 
 build:
   noarch: python
